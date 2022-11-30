@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>color change</title>
+    <style>
+        html{
+            background: linear-gradient(rgb(239, 205, 205), white);
+        }
+        .btn{
+            font-size: 200%;
+            background: rgb(174, 243, 243);
+            border-radius: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            color: black;
+            cursor: pointer;
+            border: solid black 1px;
+            display: block;
+            padding: 10px;
+            text-align: center;
+            margin: auto;
+            margin-top: 10px;
+        }
+        #box{
+            border: solid black 2px;
+            width: 300px;
+            height: 300px;
+            margin: auto;
+            margin-top: 30px;
+            background-color: yellow;
+            text-align: center;
+            font-size: 30px;
+            display: block;
+            line-height: 300px;
+            font-weight: bold;
+        }
+
+        .buttons2 .btn{
+            background: azure;
+        }
+    </style>
+
+    <div class="buttons">
+        <button class="btn" id="red">click to change color to red</button>
+        <button class="btn" id="blue">click to change color to blue</button>
+        <button class="btn" id="pink">click to change color to pink</button>
+        <button class="btn" id="orange">click to change color to orange</button>
+        <button class="btn" id="gradient">click to change color to gradient</button>
+    </div>
+    <div class="buttons2">
+        <button class="btn" id="rectangle">click to change shape to rectangle</button>
+        <button class="btn" id="circle">click to change shape to circle</button>
+        <button class="btn" id="square">click to change shape to square</button>
+        <button class="btn" id="black">click to change color to black</button>
+    </div>
+
+    <div id="box">BOX</div>
+</head>
+<body>
+    <script>
+       var red = document.getElementById('red');
+       var box = document.getElementById('box');
+
+        red.onclick = ()=>{
+            box.style.background = 'red';
+        }
+
+        var blue = document.getElementById('blue');
+        blue.onclick = ()=>{
+            box.style.background = 'blue';
+        }
+
+        var pink = document.getElementById('pink');
+        pink.onclick = ()=>{
+            box.style.background = 'pink';
+        }
+
+        var orange = document.getElementById('orange');
+        orange.onclick = ()=>{
+            box.style.background = 'orange';
+        }
+
+        var black = document.getElementById('black');
+        black.onclick = ()=>{
+            box.style.background = 'black';
+            box.style.color='white';
+        }
+
+        var gradient = document.getElementById('gradient');
+        gradient.onclick = ()=>{
+            box.style.background = 'linear-gradient(gold, silver)';
+        }
+
+        
+        var rectangle = document.getElementById('rectangle');
+        rectangle.onclick = ()=>{
+            box.style.height = '300px',
+            box.style.width = '500px',
+            box.style.borderRadius='0%'
+        }
+
+        var circle = document.getElementById('circle');
+        circle.onclick = ()=>{
+            box.style.width = '300px',
+            box.style.height = '300px',
+            box.style.borderRadius='100%';
+        }
+        
+        var square = document.getElementById('square');
+        square.onclick = ()=>{
+            box.style.height = '300px',
+            box.style.width = '300px',
+            box.style.borderRadius='0%'
+        }
+    </script>
+</body>
+</html>
