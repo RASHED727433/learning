@@ -14,3 +14,4 @@ console.log("yes! got the duplicate fruits, apple, banana, jackfruit and kiwi.. 
 }
 
 findduplicates()
+console.log(`changes shown in find duplicates in array file, just a demo`)
